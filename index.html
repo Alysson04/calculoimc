@@ -1,0 +1,66 @@
+<!--O resultado do IMC pode ser interpretado de acordo com a seguinte tabela:
+
+Abaixo de 18,5: Abaixo do peso
+18,5 a 24,9: Peso normal
+25 a 29,9: Sobrepeso
+30 a 34,9: Obesidade Grau I
+35 a 39,9: Obesidade Grau II
+40 ou mais: Obesidade Grau III
+Você pode criar uma interface simples de usuário com caixas de entrada de texto para a altura e o peso, um botão para calcular o IMC e um local para exibir o resultado.
+
+Além disso, forneça feedback ao usuário com base no resultado do IMC, indicando se eles estão abaixo do peso, com peso normal, sobrepeso ou obesos.
+
+Dica: Use manipulação do DOM para criar elementos HTML dinamicamente e exibir o resultado na página.
+
+Este desafio permitirá que você pratique conceitos como manipulação do DOM, operações matemáticas em JavaScript e manipulação de eventos de clique. Divirta-se!-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <nav>
+    <p>CALCULAR IMC</p>
+    
+  
+      
+  </nav>
+   
+  <form id="formcalcularimc">
+    <label>digite seu peso</label>
+    <input type=number step="any" id="peso" required>
+    <label>digite sua altura</label>
+    <input type="number" step="any" id="altura" required>
+
+     <button type="submit" id="botaocalcular">
+    calcular
+  </button>
+  </form>
+
+
+
+  <br>
+  <br>
+  <div id="resultadoimc" class="invisivel">
+				<h1>Seu imc é: <span id= "resultado"</span> </h1>
+			
+			</div>
+
+  <div id="resultadosobtidos" class="invisivel">
+       <h1>De acordo com seu imc <span id="classificacao"></span></h1>
+  </div>
+
+  
+  <script src="script.js"></script>
+	<script src="funçãoimc.js" />
+
+  
+</body>
+
+</html>
