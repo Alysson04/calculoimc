@@ -1,4 +1,7 @@
-
+function calcularimc(peso, altura) {
+  var valorimc = peso / (altura * altura);
+  return valorimc;
+}
 	formcalcularimc.addEventListener('submit', (e) => {
 		e.preventDefault()
 	
